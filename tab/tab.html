@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="tab.css" />
+		<link rel="stylesheet" href="../css/boxShadow.css" />
+		<link rel="stylesheet" href="../css/filter.css" />
+		<link rel="stylesheet" href="../css/遮罩条.css" />
+		<link rel="stylesheet" href="../css/highlight.css" />
+		<link rel="stylesheet" href="../css/ribbon.css" />
+		<link rel="stylesheet" type="text/css" href="../css/boxReflect.css"/>
+		<link rel="stylesheet" href="../css/linearGradient.css" />
+		<link rel="stylesheet" href="../css/loading.css" />
+		<link rel="stylesheet" href="../css/navbar.css" />
+		<style>
+			body{
+				font-family: "微软雅黑";
+			}
+			
+			.sg-button-tab{
+				line-height:35px;
+			}
+			.example{
+				width:98%;
+				margin:10px;
+			}
+			.example .sg-tab{
+				padding:10px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="sg-tabs-block example sg-tabs-line">
+			<div class="sg-tabs-nav">
+				<div class="sg-button-tabs">
+					<a class="sg-button-tab">
+						盒阴影
+					</a>
+					<a class="sg-button-tab">
+						滤镜
+					</a>
+					<a class="sg-button-tab">
+						遮罩条
+					</a>
+					<a class="sg-button-tab">
+						白光滑过效果
+					</a>
+					<a class="sg-button-tab">
+						缎带效果
+					</a>
+					<a class="sg-button-tab">
+						倒影
+					</a>
+					<a class="sg-button-tab">
+						渐变效果
+					</a>
+					<a class="sg-button-tab">
+						正在加载
+					</a>
+					<a class="sg-button-tab">
+						导航栏
+					</a>
+				</div>
+			</div>
+			<div class="sg-tabs-body">
+				<div class="sg-tabs">
+					<div class="sg-tab active">
+							<div class="box shadow">四周阴影</div>
+							<div class="box shadow-top-left">左上阴影</div>
+							<div class="box shadow-top-right">右上阴影</div>
+							<div class="box shadow-bottom-right">右下阴影</div>
+							<div class="box shadow-bottom-left">左下阴影</div>
+							<div class="box shadow-top">上单边阴影</div>
+							<div class="box shadow-right">右单边阴影</div>
+							<div class="box shadow-bottom">下单边阴影</div>
+							<div class="box shadow-left">左单边阴影</div>
+					</div>
+					<div class="sg-tab">
+						<div class="box1">
+							<img src="../img/girl.jpg" class="blur" alt="">
+							<p>模糊（blur）</p>
+						</div>
+						<div class="box1">
+							<img src="../img/girl.jpg" class="grayscale" alt="">
+							<p>灰度（grayscale）</p>
+						</div>
+						<div class="box1">
+							<img src="../img/girl.jpg" class="sepia" alt="">
+							<p>褐色（sepia）</p>
+						</div>
+						<div class="box1">
+							<img src="../img/girl.jpg" class="saturate" alt="">
+							<p>饱和度（saturate）</p>
+						</div>
+						<div class="box1">
+							<img src="../img/girl.jpg" class="hue-rotate" alt="">
+							<p>色相旋转（hue-rotate）</p>
+						</div>
+						<div class="box1">
+							<img src="../img/girl.jpg" class="invert" alt="">
+							<p>反色（invert）</p>
+						</div>
+						<div class="box1">
+							<img src="../img/girl.jpg" class="opacity" alt="">
+							<p>透明度（opacity）</p>
+						</div>
+						<div class="box1">
+							<img src="../img/girl.jpg" class="brightness" alt="">
+							<p>亮度（brightness）</p>
+						</div>
+						<div class="box1">
+							<img src="../img/girl.jpg" class="contrast" alt="">
+							<p>对比度（contrast）</p>
+						</div>
+						<div class="box1">
+							<img src="../img/girl.jpg" class="drop-shadow" alt="">
+							<p>阴影（drop-shadow）</p>
+						</div>
+					</div>
+					<div class="sg-tab">
+						<div class="mask" data-title="遮罩条">
+							<img src="../img/girl.jpg" alt="">
+						</div>
+						<br>
+						<div class="mask-door" data-title="遮罩条">
+							<img src="../img/girl.jpg" alt="">
+						</div>
+					</div>
+					<div class="sg-tab">
+						<div class="highlight-box">
+							<img src="../img/example.jpg" alt="" />
+						</div>
+					</div>
+					<div class="sg-tab">
+						<div class="bubble">
+							<!--div.arrow实现两边的三角形缎带-->
+							<div class="arrow1">
+							</div>
+							<div class="arrow2">
+							</div>
+							<div class="rectangle">
+								<h2>缎带</h2>
+							</div>
+							<div class="info">
+								<h2>缎带效果</h2>
+							</div>
+						</div>
+					</div>
+					<div class="sg-tab">
+						<div class="box2-body">
+							<div class="box-reflect">
+								<img src="../img/example.jpg" alt="" />
+							</div>
+						</div>
+					</div>
+					<div class="sg-tab">
+							<div class="box3 linearGradient">水平条纹</div>
+							<div class="box3 linearGradient2">垂直条纹</div>
+							<div class="box3 linearGradient3">斜向条纹</div>
+							<div class="box3 linearGradient4">60度斜向条纹</div>
+							<div class="box3 grid">桌布网格</div>
+					</div>
+					<div class="sg-tab">
+						<div class="loading">
+							<div class="loader circle-line small">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>	
+					</div>
+					<div class="sg-tab">
+						<nav class="shrink-navbar">
+							<ul class="item navbar-menu">
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+								<li>
+									<a>子菜单</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="tab.js"></script>
+	</body>
+</html>

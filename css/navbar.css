@@ -1,0 +1,82 @@
+nav,
+nav *,
+nav *:before,
+nav *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.shrink-navbar ul,
+.shrink-navbar ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.shrink-navbar a,
+.shrink-navbar a:active,
+.shrink-navbar a:hover {
+	outline: 0;
+	text-decoration: none;
+}
+
+.shrink-navbar a {
+	color: #c8161e;
+	display: block;
+	cursor: pointer;
+}
+
+
+.shrink-navbar {
+	margin-top: 30px;
+	background: #eee;
+	display: inline-block;
+}
+.shrink-navbar:after{
+	content:"";
+	display:table;
+}
+.shrink-navbar .navbar-menu> li {
+	position: relative;
+	float: left;
+	width: 100px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.shrink-navbar .navbar-menu> li a {
+	color: #333;
+}
+
+.shrink-navbar .navbar-menu> li:after {
+	content: "";
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	height: 2px;
+	width: 0;
+	background: #c8161e;
+}
+
+.shrink-navbar .navbar-menu> li:after,
+.shrink-navbar .navbar-menu> li a {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.shrink-navbar .navbar-menu> li:hover:after {/*宽度由0变为100%*/
+	width: 100%;
+}
+
+.shrink-navbar .navbar-menu> li:hover a {
+	color: #c8161e;
+}
+
+.shrink-navbar .navbar-menu> li.active:after {
+	width: 100%;
+}
+
+.shrink-navbar .navbar-menu> li.active a {
+	color: #c8161e;
+}
+
